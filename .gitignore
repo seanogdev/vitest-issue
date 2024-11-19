@@ -1,0 +1,75 @@
+# OS, tools, editors, etc
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.turbo
+.vscode/**/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.env.local
+.env.*.local
+.eslintrc-auto-import.json
+
+# A workaround for https://github.com/vitejs/vite/issues/13267
+vite.config.js.timestamp-*.mjs
+
+# Application
+/lightspeed/dist/
+/lightspeed/.vite-inspect/
+
+# Design system
+/lightspeed/src/designsystem/auto-imports.d.ts
+/lightspeed/src/designsystem/components.d.ts
+/designsysteminfra/*/dist/
+/designsystem/**/dist/
+/designsystem/docs/meta/
+/designsystem/docs/.vitepress/cache/
+/designsystem/docs/.vitepress/dist/
+/designsystem/ops/usage-stats/dist/
+
+# Docs
+/docs/.vitepress/cache/
+/docs/.vitepress/dist/
+## old directory that might still exist
+/dist/
+
+# Storybook
+/lightspeed/.storybook/dist/
+/lightspeed/src/designsystem/Welcome.mdx
+## old directory that might still exist
+/dist-storybook/
+
+# Stats
+/stats/dist
+/stats/auto-imports.d.ts
+/stats/components.d.ts
+/stats/.eslintrc-auto-import.json
+
+# Unit tests
+/coverage/
+
+# End to end tests
+# Full report
+/e2e/artifact/
+# Raw Cucumber report
+/e2e/report/
+# Screenshots of failed runs
+/e2e/results/
+# The login state
+/e2e/browserState.json
+# The recording of test execution
+/e2e/trace.zip
+# Allure reporter files
+/e2e/allure-results/
+/e2e/allure-report/
+# e2eConfig file
+/e2e/e2eConfig.json
